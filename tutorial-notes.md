@@ -18,4 +18,13 @@ Building Web Apps with Node.js and Express
 3. Tooling
     * ESLint is static code analysis
     * ESLint provides some style guides for styling code. This tutorial uses AirBNB style guide
+    * node.green tells you which version of node allow which features in javascript
+    * In VS Code ctrl+fn+f2 will get all instances of value and can edit all at once
+4. Templating Engines
+    * Pug (formally jade) - whitespace delimited and simplified representation of html
+    * EJS - basically drops tags into html (similar to react or angular)
+5. Templates
+    * Lots of good templates to start project with
+    * bootstrap zero has some good ones (using starterstrap for this)
+6. Routing
     * 
