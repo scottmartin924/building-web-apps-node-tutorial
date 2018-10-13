@@ -4,6 +4,7 @@
   "description": "Project built while following the Pluralsight tutorial Building Web Applications with Node.js and Express 4.0 (https://app.pluralsight.com/library/courses/nodejs-express-web-applications-update/) taught by Jonathan Mills",
   "main": "app.js",
   "scripts": {
+    "start": "DEGUG=app node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

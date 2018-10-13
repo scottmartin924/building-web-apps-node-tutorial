@@ -15,4 +15,7 @@ Building Web Apps with Node.js and Express
     * morgan package allows some built-in debugging if you include it as middleware
     * path package allows you to create file paths easily. Can use path.join to put together multiple parts of file path
     * CDN are places on iternet w/ common spot to pull css and js from (bootstrap and jquery both have one)
+3. Tooling
+    * ESLint is static code analysis
+    * ESLint provides some style guides for styling code. This tutorial uses AirBNB style guide
     * 
