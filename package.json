@@ -1,0 +1,27 @@
+{
+  "name": "building-webapps-nodejs",
+  "version": "1.0.0",
+  "description": "Project built while following the Pluralsight tutorial Building Web Applications with Node.js and Express 4.0 (https://app.pluralsight.com/library/courses/nodejs-express-web-applications-update/) taught by Jonathan Mills",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottmartin924/building-web-apps-node-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottmartin924/building-web-apps-node-tutorial/issues"
+  },
+  "homepage": "https://github.com/scottmartin924/building-web-apps-node-tutorial#readme",
+  "dependencies": {
+    "bootstrap": "4.1.3",
+    "chalk": "2.4.1",
+    "debug": "4.1.0",
+    "express": "4.16.4",
+    "jquery": "3.3.1",
+    "morgan": "1.9.1"
+  }
+}
