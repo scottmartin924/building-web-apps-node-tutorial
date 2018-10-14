@@ -27,4 +27,5 @@ Building Web Apps with Node.js and Express
     * Lots of good templates to start project with
     * bootstrap zero has some good ones (using starterstrap for this)
 6. Routing
-    * 
+    * Would prefer to have routes directory with all routers defined in different files then in app.js just import bookRouter (require) and then use it for the /book route. So the book router defines all its routes relative to /books
+    * Make your routers (e.g. bookRouter) a function which is exported so can pass variables into it (see bookRouter as an example)

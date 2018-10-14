@@ -17,8 +17,26 @@ app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/dist'))
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
+const nav = [
+  { link: '/books', title: 'Books' },
+  { link: '/authors', title: 'Authors' }
+];
+
+
+// Want to line up routers here and then use below it...much cleaner than all in 1 file
+// To make require not come from node_modules need file path
+const bookRouter = require('./src/routes/bookRoutes')(nav);
+
+// Use bookRouter from /books
+app.use('/books', bookRouter);
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Library' });
+  res.render(
+    'index',
+    {
+      nav: [{ link: '/books', title: 'Books' }, { link: '/authors', title: 'Authors' }],
+      title: 'Library',
+    },
+  );
 });
 
 app.listen(port, () => debug(`Listening on port ${chalk.green(port)}`));
