@@ -9,6 +9,15 @@ const dbName = 'booksDb';
 
 // Function returned as a router so can pass variables in (e.g. shared variables between routes)
 function router(nav) {
+  // Ensure logged in before allowing navigation to books
+  bookRouter.use((req, res, next) => {
+    if (req.user) {
+      next();
+    } else {
+      res.redirect('/');
+    }
+  });
+
   // At root of book router (which is at books) return string
   bookRouter.route('/')
     .get((req, res) => {
