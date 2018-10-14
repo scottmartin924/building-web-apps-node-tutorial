@@ -25,10 +25,14 @@ const nav = [
 
 // Want to line up routers here and then use below it...much cleaner than all in 1 file
 // To make require not come from node_modules need file path
+const adminRouter = require('./src/routes/adminRoutes')();
 const bookRouter = require('./src/routes/bookRoutes')(nav);
 
+
 // Use bookRouter from /books
+app.use('/admin', adminRouter);
 app.use('/books', bookRouter);
+
 app.get('/', (req, res) => {
   res.render(
     'index',

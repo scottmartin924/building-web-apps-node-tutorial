@@ -4,7 +4,7 @@
   "description": "Project built while following the Pluralsight tutorial Building Web Applications with Node.js and Express 4.0 (https://app.pluralsight.com/library/courses/nodejs-express-web-applications-update/) taught by Jonathan Mills",
   "main": "app.js",
   "scripts": {
-    "start": "DEBUG=app nodemon app.js",
+    "start": "DEBUG=app,app:* nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint app.js",
     "lint-fix": "eslint app.js --fix"
@@ -26,6 +26,7 @@
     "ejs": "^2.6.1",
     "express": "4.16.4",
     "jquery": "3.3.1",
+    "mongodb": "^3.1.8",
     "morgan": "1.9.1",
     "nodemon": "^1.18.4",
     "pug": "^2.0.3"

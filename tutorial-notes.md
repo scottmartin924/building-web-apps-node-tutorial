@@ -29,3 +29,20 @@ Building Web Apps with Node.js and Express
 6. Routing
     * Would prefer to have routes directory with all routers defined in different files then in app.js just import bookRouter (require) and then use it for the /book route. So the book router defines all its routes relative to /books
     * Make your routers (e.g. bookRouter) a function which is exported so can pass variables into it (see bookRouter as an example)
+7. Databases
+    * async/await is a way to avoid using promises
+    * If have an async function then can do const result = await function and this will not run until AFTER the query comes back
+        * I'm a little confused by this; is this blocking the execution?
+    * Query Parameters
+        * In express query parameters are in request.query.{parm name} and route parameters are on req.params.{param name} and req.body has http body
+    * Middleware
+        * Already used one piece of middleware: morgan. Basically it logs request automatically
+        * Middleware is just a function executed on ALL requests (regardless of route...not sure if that's strictly true)
+        * After middleware function must call next() to go to next middleware item
+        * So can use middleware like filters to control if request continues
+        * In router can do a piece of "middleware" (not sure it fits defn) with .all() which does a function for ALL requests to this
+          route. Then after all() can do the get, put, post, etc routes.
+            * In this all() method can modify the rquest to put new things on it
+    * Admin Routes
+        * For this project these will handle insertion of data to mongo automatically (which is cool)
+        * 
