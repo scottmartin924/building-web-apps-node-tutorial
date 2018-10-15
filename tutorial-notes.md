@@ -52,4 +52,4 @@ Building Web Apps with Node.js and Express
     * Use body-parser package to parse http request body
     * Can do req.logout on a request (if using passport) to 'logout' a user
 9. Structure and 3rd Party APIs
-    * 
+    * Setup controllers and just have the routes map to the controller methods (don't put everything in the routes files)
