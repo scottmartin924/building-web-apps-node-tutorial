@@ -39,6 +39,7 @@ function authController(nav) {
   }
 
   function signInPost() {
+    debug('signin post');
     passport.authenticate('local', {
       successRedirect: '/auth/profile',
       failureRedirect: '/'

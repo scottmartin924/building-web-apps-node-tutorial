@@ -2,10 +2,11 @@ const express = require('express');
 const bookController = require('../controllers/bookController');
 
 const bookRouter = express.Router();
+const bookService = require('../services/goodreadsService');
 
 // Function returned as a router so can pass variables in (e.g. shared variables between routes)
 function router(nav) {
-  const { getIndex, getById, middleware } = bookController(nav);
+  const { getIndex, getById, middleware } = bookController(nav, bookService);
 
   // Ensure logged in before allowing navigation to books
   bookRouter.use(middleware);

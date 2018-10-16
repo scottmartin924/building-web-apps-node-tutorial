@@ -53,3 +53,4 @@ Building Web Apps with Node.js and Express
     * Can do req.logout on a request (if using passport) to 'logout' a user
 9. Structure and 3rd Party APIs
     * Setup controllers and just have the routes map to the controller methods (don't put everything in the routes files)
+    * Axios is http client...apparently it's popular
